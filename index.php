@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='CSS\homepage.css'></link>
 
     <title>E-Commerce</title>
@@ -52,13 +52,35 @@
                 <div class='main-page-content-right'>
                     <p>60% Discount</p>
                     <h1>Winter Collection</h1>
-                    <h2>Best Cloth By zozo!</h2>
+                    <h2> <i>Best Cloth By zozo!</i></h2>
                     <button>Shop Now</button>
                 </div>
 
                 <div>
                 </div>
+            </div>
 
+            <h1 style="text-align:center;">Shop by Category</h1>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="images\person_2.png" alt="no image">
+                    <h1>Owmen`S</h1>
+                    <p>Best New Deals</p>
+                </div>
+                
+                <div class="card">
+                    <img src="images\person_3.png" alt="no image">
+                    <h1>Winder Cloth</h1>
+                    <h2>New Collection</h2>
+                </div>
+                
+                <div class="card">
+                    <img src="images\person_4.png" alt="no image">
+                    <h1>Man`S Cloth</h1>
+                    <p>Best New Deals</p>
+                    <h2>New Collection</h2>
+                </div>
             </div>
     </body>
 </html>
