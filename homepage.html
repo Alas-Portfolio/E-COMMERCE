@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Parts & Accessories</title>
+    <link rel="stylesheet" href="CSS\homepage.css">
+</head>
+<body>
+
+    <div class="main-content">
+        <h1 class="title">Motorcycle Parts & Accessories</h1>
+
+        <ul class="item-list">
+            <li class="item">
+                <img src="https://via.placeholder.com/150" alt="Motorcycle Part 1" class="item-image">
+                <div class="item-details">
+                    <h2>Part 1</h2>
+                    <p class="price">$99.99</p>
+                    <div class="quantity-control">
+                        <button class="quantity-btn" onclick="decreaseQuantity('part1')">-</button>
+                        <span id="part1" class="quantity">1</span>
+                        <button class="quantity-btn" onclick="increaseQuantity('part1')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Part 1', 99.99, 'part1')">Add to Cart</button>
+                </div>
+            </li>
+            <li class="item">
+                <img src="https://via.placeholder.com/150" alt="Motorcycle Part 2" class="item-image">
+                <div class="item-details">
+                    <h2>Part 2</h2>
+                    <p class="price">$149.99</p>
+                    <div class="quantity-control">
+                        <button class="quantity-btn" onclick="decreaseQuantity('part2')">-</button>
+                        <span id="part2" class="quantity">1</span>
+                        <button class="quantity-btn" onclick="increaseQuantity('part2')">+</button>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Part 2', 149.99, 'part2')">Add to Cart</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sidebar">
+        <div class="checkout-summary">
+            <h3>Cart Summary</h3>
+            <div id="cart-summary">No items added yet</div>
+            <button class="checkout-btn" onclick="showCheckoutCard()">Checkout</button>
+        </div>
+        <div class="accessories">
+            <h3>Accessories</h3>
+            <ul>
+                <li>Helmet - $59.99</li>
+                <li>Gloves - $19.99</li>
+                <li>Jacket - $129.99</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="checkout-card" class="checkout-card">
+        <div class="checkout-card-content">
+            <h2>Checkout</h2>
+            <div id="receipt-details"></div>
+            <button class="finalize-btn">Finalize Purchase</button>
+            <button class="close-btn" onclick="closeCheckoutCard()">Close</button>
+        </div>
+    </div>
+
+    <script src="JS\homepage.js"></script>
+</body>
+</html>
