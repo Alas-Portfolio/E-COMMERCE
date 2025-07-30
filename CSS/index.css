@@ -326,3 +326,9 @@ main {
                 width: calc(100% - 40px); 
             }
         } 
+
+ @media (max-height: 200px){
+    .main-page-header{
+        display: none;
+    }
+ }       

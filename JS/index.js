@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const cartButton = document.querySelectorAll('button')[2]; 
     cartButton.addEventListener('click', function() {
-        alert('Added to Cart');
+        window.location.href = '/store.html'
     });
 
     const signInButton = document.querySelectorAll('button')[3];
